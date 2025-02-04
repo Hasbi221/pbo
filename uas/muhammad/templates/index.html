@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>muhammad hasbi maulana sumarto</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        header {
+            background-color: #500377;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 2.8em;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.2em;
+        }
+
+        .container {
+            width: 95%;
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 10px;
+        }
+
+        /* Product List */
+        .product-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+            justify-items: center;
+        }
+
+        .product-item {
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+            overflow: hidden;
+        }
+
+        .product-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            background-color: #4CAF50; /* Darker green background on hover */
+            color: #fff;
+        }
+
+        .product-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .product-item:hover img {
+            transform: scale(1.1); /* Slight zoom effect on hover */
+        }
+
+        .product-item h3 {
+            font-size: 1.6em;
+            margin: 10px 0;
+        }
+
+        .product-item p {
+            font-size: 1em;
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        .price {
+            font-size: 1.4em;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: #500377;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 1.1em;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #500377;
+        }
+
+        /* Admin Section */
+        .admin-section {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            margin-top: 40px;
+        }
+
+        .admin-section h2 {
+            font-size: 2em;
+            color: #6A1B9A;
+            margin-bottom: 20px;
+        }
+
+        .admin-actions {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .admin-actions a {
+            display: block;
+            background-color: #FF9800;
+            color: white;
+            padding: 15px 25px;
+            border-radius: 8px;
+            font-size: 1.1em;
+            text-align: center;
+            width: 48%;
+            transition: background-color 0.3s ease;
+        }
+
+        .admin-actions a:hover {
+            background-color: #F57C00;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #500377;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.2em;
+            }
+
+            .product-item {
+                padding: 15px;
+            }
+
+            .admin-actions a {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>TODANA</h1>
+    <h1>Toko Sederhana dan Serba Ada</h1>
+</header>
+
+<div class="container">
+    <!-- Produk List -->
+    <section class="product-list">
+        <div class="product-item">
+            <h3>Organizar Multifungsi </h3>
+            <p>Bersihkan Dan Atur Ruang Rumah Anda dengan Mudah!</p>
+            <p class="price">Rp 100.000</p>
+            <a href="#" class="button">Tambah ke Keranjang</a>
+        </div>
+
+        <div class="product-item">
+            <h3>Meja Kerja Ekonomis</h3>
+            <p>Bekerja Lebih Nyaman, Produktivas Meningkat!</p>
+            <p class="price">Rp 200.000</p>
+            <a href="#" class="button">Tambah ke Keranjang</a>
+        </div>
+
+        <div class="product-item">
+            <h3>Lampu LED pintar Dengan Remote</h3>
+            <p>Hiasa Ruang Anda Dengan Pencahayaan yang dapat diatur!</p>
+            <p class="price">Rp 300.000</p>
+            <a href="#" class="button">Tambah ke Keranjang</a>
+        </div>
+
+        <div class="product-item">
+            <h3>Penyaring Udara HEPA</h3>
+            <p>Nikmati udara bersih dan segar di dalam ruangan anda!</p>
+            <p class="price">Rp 120.000</p>
+            <a href="#" class="button">Tambah ke Keranjang</a>
+        </div>
+
+        <div class="product-item">
+            <h3>Sofa Lipat </h3>
+            <p>Fungsional dan stylish, ideal untuk terbatas!</p>
+            <p class="price">Rp 250.000</p>
+            <a href="#" class="button">Tambah ke Keranjang</a>
+        </div>
+
+        <div class="product-item">
+            <h3>Blender Multifungsi</h3>
+            <p>Buat hidangan sehat lebih mudah dan cepat!</p>
+            <p class="price">Rp 350.000</p>
+            <a href="#" class="button">Tambah ke Keranjang</a>
+        </div>
+    </section>
+
+    <!-- Admin Section -->
+    <div class="admin-section">
+        <h2>Admin Toko</h2>
+        <div class="admin-actions">
+            <a href="#">Tambah Produk</a>
+            <a href="#">Kelola Pesanan</a>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2025 ToDaNa Online. Semua hak cipta dilindungi.</p>
+</footer>
+
+</body>
+</html>
